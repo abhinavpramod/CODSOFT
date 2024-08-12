@@ -29,7 +29,7 @@ class GUI():
         root.config(bg='#f9f4f4')
         root.resizable(False, False)
 
-        self.label = Label(text="PASSWORD GENERATOR", anchor=N, fg='#030303', bg='#f9f4f4', font='arial 20 underline')
+        self.label = Label(text="PASSWORD GENERATOR", anchor=N, fg='#030303', bg='#f9f4f4', font='arial 20  underline')
         self.label.grid(row=0, column=1)
 
         self.blank_label1 = Label(text="")
@@ -41,7 +41,7 @@ class GUI():
         self.blank_label2 = Label(text="")
         self.blank_label2.grid(row=3, column=0, columnspan=2)    
 
-        self.user = Label(text=" User Name ", font='arial 14', bg='#f9f4f4', fg='#030303')
+        self.user = Label(text=" User Name ", font='arial 14 ', bg='#f9f4f4', fg='#030303')
         self.user.grid(row=4, column=0)
 
         self.textfield = Entry(textvariable=self.n_username, font='arial 14', bd=5, relief='ridge')
@@ -51,7 +51,7 @@ class GUI():
         self.blank_label3 = Label(text="")
         self.blank_label3.grid(row=5, column=0)
 
-        self.length = Label(text="Enter Password Length: ", font='ariel 14', bg='#f9f4f4', fg='#030303')
+        self.length = Label(text="Enter Password Length: ", font='ariel 14 ', bg='#f9f4f4', fg='#030303')
         self.length.grid(row=6, column=0)
 
         self.length_textfield = Entry(textvariable=self.n_passwordlen, font='ariel 14', bd=6, relief='ridge')
@@ -60,7 +60,7 @@ class GUI():
         self.blank_label4 = Label(text="")
         self.blank_label4.grid(row=7, column=0)
  
-        self.generated_password = Label(text="Generated Password: ", font='ariel 14', bg='#f9f4f4', fg='#030303')
+        self.generated_password = Label(text="Generated Password: ", font='ariel 14 ', bg='#f9f4f4', fg='#030303')
         self.generated_password.grid(row=8, column=0)
 
         self.generated_password_textfield = Entry(textvariable=self.n_generatedpassword, font='ariel 14', bd=5, relief='ridge', fg='#030303')
@@ -72,19 +72,19 @@ class GUI():
         self.blank_label6 = Label(text="")
         self.blank_label6.grid(row=10, column=0)
 
-        self.generate = Button(text="Generate password", bd=3, relief='solid', padx=1, pady=1, font='ariel", 14', fg='#030303', bg='#f9f4f4', command=self.generate_pass)
+        self.generate = Button(text="Generate password", bd=3, relief='solid', padx=1, pady=1, font='ariel", 14 ', fg='#030303', bg='#f9f4f4', command=self.generate_pass)
         self.generate.grid(row=11, column=1)
 
         self.blank_label5 = Label(text="")
         self.blank_label5.grid(row=12, column=0)
 
-        self.accept = Button(text="Accept", bd=3, relief='solid', padx=1, pady=1, font='ariel 14 bold ', fg='#030303', bg='#f9f4f4', command=self.accept_fields)
+        self.accept = Button(text="Accept", bd=3, relief='solid', padx=1, pady=1, font='ariel 14  ', fg='#030303', bg='#f9f4f4', command=self.accept_fields)
         self.accept.grid(row=13, column=1)
 
         self.blank_label1 = Label(text="")
         self.blank_label1.grid(row=14, column=1)
 
-        self.reset = Button(text="clear", bd=3, relief='solid', padx=1, pady=1, font='ariel 15 bold ', fg='#030303', bg='#f9f4f4', command=self.reset_fields)
+        self.reset = Button(text="clear", bd=3, relief='solid', padx=1, pady=1, font='ariel 15 ', fg='#030303', bg='#f9f4f4', command=self.reset_fields)
         self.reset.grid(row=15, column=1)
 
 
