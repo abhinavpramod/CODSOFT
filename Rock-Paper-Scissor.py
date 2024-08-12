@@ -1,26 +1,14 @@
-# Import Required Library
 from tkinter import *
 import random
- 
-# Create Object
 root = Tk()
- 
-# Set geometry
 root.geometry("750x500")
- 
-# Set title
 root.title("Rock Paper Scissor Game")
- 
-# Computer Value
 computer_value = {
     "0": "Rock",
     "1": "Paper",
     "2": "Scissor"
 }
- 
-# Reset The Game
- 
- 
+
 def reset_game():
     b1["state"] = "active"
     b2["state"] = "active"
@@ -28,17 +16,11 @@ def reset_game():
     l1.config(text="Player              ")
     l3.config(text="Computer")
     l4.config(text="")
- 
-# Disable the Button
- 
- 
+  
 def button_disable():
     b1["state"] = "disable"
     b2["state"] = "disable"
     b3["state"] = "disable"
- 
-# If player selected rock
- 
  
 def isrock():
     c_v = computer_value[str(random.randint(0, 2))]
@@ -53,9 +35,6 @@ def isrock():
     l3.config(text=c_v)
     button_disable()
  
-# If player selected paper
- 
- 
 def ispaper():
     c_v = computer_value[str(random.randint(0, 2))]
     if c_v == "Paper":
@@ -68,10 +47,7 @@ def ispaper():
     l1.config(text="Paper           ")
     l3.config(text=c_v)
     button_disable()
- 
-# If player selected scissor
- 
- 
+
 def isscissor():
     c_v = computer_value[str(random.randint(0, 2))]
     if c_v == "Rock":
@@ -85,8 +61,6 @@ def isscissor():
     l3.config(text=c_v)
     button_disable()
  
- 
-# Add Labels, Frames and Button
 Label(root,
       text="Rock Paper Scissor",
       font="ariel 14 bold underline",
@@ -141,5 +115,4 @@ Button(root, text="Reset Game",
        font=10, fg="green",
        bg="white", command=reset_game).pack(pady=20)
  
-# Execute Tkinter
 root.mainloop()
