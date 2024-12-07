@@ -1,6 +1,14 @@
 # CODSOFT PYTHON PROGRAMMING
-Task 1: This is a GUI based To-do-list application where users and create and delete tasks.
-Task 2:This is a GUI based simple calculator which performs basic arithmetic operations.
-Task 3:This is a Random password generator application which provides the user with a random password.
-Task 4: This is a Rock Paper Scissor game.
-Task 5:This is a Contact book which allows user to create,update,view and delete contacts.
+TASK 1 
+This is a basic graphical user interface (GUI) calculator built using Python's Tkinter library. The application supports standard arithmetic operations such as addition, subtraction, multiplication, and division.
+Features:
+Basic Operations: Add, subtract, multiply, and divide.
+Clear Function: Clears the current expression.
+Result Memory: Stores the previous result and allows you to continue calculations.
+Error Handling: Handles division by zero and other errors with a user-friendly error message.
+Key Components:
+Tkinter GUI: The interface includes a text field for the expression and buttons for digits, operators, and functions.
+Expression Parsing: The calculator evaluates the mathematical expression entered by the user using Python's eval() function.
+Custom Operator Handling: The multiplication operator is handled as x on the UI, but internally converted to * for evaluation.
+
+TASK 2
